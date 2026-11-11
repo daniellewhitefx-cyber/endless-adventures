@@ -141,7 +141,13 @@ a{ color: inherit; text-decoration: none; }
 }
 
 /* Torn-paper footer divider */
-.footer-tear{ display:block; width:100%; height:auto; }
+.footer-tear{
+  position: absolute; top: -24px; left:0; z-index:-1;
+  width:100%; height: calc(100% + 24px);
+  object-fit: cover;
+  object-position: center bottom;
+  pointer-events: none;
+}
 
 /* Section shared */
 .section-title{
@@ -261,8 +267,8 @@ a.game-card-btn:hover{ background: rgba(221,196,155,0.1); color: #ffffff; border
 
 /* Footer */
 .site-footer{
-  background: var(--nav-blue);
-  border-top: 3px solid var(--nav-blue-dark);
+  position: relative;
+  z-index: 1;
   padding: 1rem 1.5rem;
   display:flex; align-items:center; justify-content:space-between;
   font-family: var(--font-display);
