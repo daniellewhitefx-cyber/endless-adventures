@@ -28,8 +28,8 @@ a{ color: inherit; text-decoration: none; }
   position: sticky; top:0; z-index: 50;
 }
 .nav-tear{
-  position: absolute; inset:0; z-index:-1;
-  width:100%; height:100%;
+  position: absolute; top:0; left:0; z-index:-1;
+  width:100%; height: calc(100% + 34px);
   object-fit: cover;
   object-position: center bottom;
   pointer-events: none;
