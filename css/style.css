@@ -73,7 +73,7 @@ a{ color: inherit; text-decoration: none; }
   overflow:hidden;
 }
 .hero-bg{ position:absolute; inset:0; z-index:0; }
-.hero-bg img{ width:100%; height:100%; object-fit: cover; }
+.hero-bg img{ width:100%; height:100%; object-fit: cover; object-position: center bottom; }
 .hero-scrim{
   position:absolute; inset:0;
   background: linear-gradient(180deg, rgba(5,5,8,0.25) 0%, rgba(5,5,8,0.55) 100%);
@@ -108,17 +108,15 @@ a{ color: inherit; text-decoration: none; }
 }
 
 /* Torn-paper section dividers */
+.ribbon-divider{ line-height: 0; }
+.ribbon-bar{ display:block; width:100%; height:auto; }
+
 .section-divider{
   position: relative;
   height: clamp(32px, 5vw, 60px);
   pointer-events: none;
 }
 .section-divider svg{ display:block; width:100%; height:100%; }
-.divider-hero-games{
-  margin-top: calc(-1 * clamp(32px, 5vw, 60px));
-  z-index: 2;
-}
-.divider-hero-games path{ fill: var(--ink); }
 .divider-footer path{ fill: var(--nav-blue); }
 
 /* Section shared */
