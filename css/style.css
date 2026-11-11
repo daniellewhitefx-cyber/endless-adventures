@@ -140,14 +140,8 @@ a{ color: inherit; text-decoration: none; }
   margin: 0;
 }
 
-/* Torn-paper section dividers */
-.section-divider{
-  position: relative;
-  height: clamp(32px, 5vw, 60px);
-  pointer-events: none;
-}
-.section-divider svg{ display:block; width:100%; height:100%; }
-.divider-footer path{ fill: var(--nav-blue); }
+/* Torn-paper footer divider */
+.footer-tear{ display:block; width:100%; height:auto; }
 
 /* Section shared */
 .section-title{
