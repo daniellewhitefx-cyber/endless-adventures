@@ -15,7 +15,7 @@
 
 html, body{
   margin:0; padding:0;
-  background: #ffffff; /* TEMP: diagnosing hero/nav gap */
+  background: var(--ink);
   color: var(--cream);
   font-family: var(--font-ui);
   overflow-x: hidden;
@@ -77,11 +77,11 @@ a{ color: inherit; text-decoration: none; }
   padding: 3rem 1.5rem;
   overflow:hidden;
 }
-.hero-bg{ position:absolute; inset:0; z-index:0; }
+.hero-bg{ position:absolute; inset:0; z-index:0; background: var(--ink-deep); }
 .hero-bg img{
   width:100%; height:100%;
   object-fit: cover; object-position: center bottom;
-  transform: scale(1.18);
+  transform: scale(1.08);
   transform-origin: center bottom;
 }
 .hero-scrim{
