@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Endless Adventures Ontario</title>
+<meta name="description" content="Endless Adventures Ontario runs immersive live-action roleplay games across Ontario, including Fantasy Alive, Dormancy, and End Times. Discover your story.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=__ASSET_VERSION__">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <div class="nav-group nav-left">
+      <div class="nav-dropdown">
+        <button type="button" class="nav-link nav-dropdown-toggle" id="socials-toggle" aria-expanded="false">socials</button>
+        <div class="nav-dropdown-menu" id="socials-menu">
+          <!-- TODO: swap these placeholder hrefs for the real social URLs -->
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-group nav-center">
+      <a href="#home" class="nav-link">home</a>
+      <a href="#our-games" class="nav-link">our games</a>
+      <a href="#contact" class="nav-link">contact</a>
+    </div>
+    <div class="nav-group nav-right">
+      <!-- TODO: swap in the real Discord invite link -->
+      <a href="#" target="_blank" rel="noopener" class="nav-link">join discord</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="images/hero.jpg" alt="" aria-hidden="true">
+      <div class="hero-scrim"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-banner">
+        <span class="hero-banner-line">Endless</span>
+        <span class="hero-banner-line">Adventures</span>
+        <span class="hero-banner-line">Ontario</span>
+      </div>
+      <div class="hero-copy">
+        <p class="hero-tagline">Immersive<br>Live Action<br>Roleplaying</p>
+        <p class="hero-subline">Discover your story!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="our-games" class="games-section">
+    <h2 class="section-title">Our Games</h2>
+    <div class="games-grid">
+
+      <article class="game-card game-card-hiatus">
+        <img src="images/dormancy.jpg" alt="" class="game-card-bg">
+        <div class="game-card-scrim"></div>
+        <div class="game-card-status">On Hiatus</div>
+        <div class="game-card-info">
+          <p>Text here</p>
+        </div>
+      </article>
+
+      <article class="game-card">
+        <a href="https://fantasyalivelrp.com" target="_blank" rel="noopener" class="game-card-link">
+          <img src="images/fantasy-alive.jpg" alt="" class="game-card-bg">
+          <div class="game-card-scrim"></div>
+          <div class="game-card-info">
+            <p>Text here</p>
+            <span class="game-card-cta">Visit fantasyalivelrp.com &rarr;</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="game-card game-card-coming-soon">
+        <img src="images/end-times.jpg" alt="" class="game-card-bg">
+        <div class="game-card-scrim"></div>
+        <div class="game-card-status">Coming Soon</div>
+        <div class="game-card-info">
+          <p>Text here</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Contact Form</h2>
+    <div class="contact-form-wrap">
+      <p class="contact-lede">Questions about our games, our organization, or anything else? Send us a message.</p>
+      <form id="contact-form">
+        <div class="contact-field">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" required>
+        </div>
+        <div class="contact-field">
+          <label for="contact-email">Your Email</label>
+          <input type="email" id="contact-email" required>
+        </div>
+        <div class="contact-field">
+          <label for="contact-reason">What's this about?</label>
+          <select id="contact-reason">
+            <option>General Question</option>
+            <option>Fantasy Alive</option>
+            <option>Dormancy</option>
+            <option>End Times</option>
+            <option>Owners / Business</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="contact-field">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" required></textarea>
+        </div>
+        <button type="submit" class="contact-submit" id="contact-submit-btn">Send</button>
+        <div id="contact-msg" class="contact-msg"></div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <!-- TODO: link to a real policies page once one exists -->
+  <a href="#" class="footer-link">policies</a>
+  <span class="footer-copyright">&copy; <span id="footer-year"></span> Endless Adventures Ontario</span>
+</footer>
+
+<script src="js/main.js?v=__ASSET_VERSION__"></script>
+</body>
+</html>

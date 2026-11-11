@@ -1,0 +1,11 @@
+{
+  "name": "endless-adventures",
+  "compatibility_date": "2026-08-13",
+  "main": "worker.js",
+  "assets": {
+    "directory": "./",
+    "binding": "ASSETS",
+    "html_handling": "none",
+    "not_found_handling": "none"
+  }
+}
