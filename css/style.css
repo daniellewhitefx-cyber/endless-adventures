@@ -15,7 +15,7 @@
 
 html, body{
   margin:0; padding:0;
-  background: var(--ink);
+  background: #ffffff; /* TEMP: diagnosing hero/nav gap */
   color: var(--cream);
   font-family: var(--font-ui);
   overflow-x: hidden;
