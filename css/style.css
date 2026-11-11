@@ -26,13 +26,12 @@ a{ color: inherit; text-decoration: none; }
 /* Nav */
 .site-nav{
   position: sticky; top:0; z-index: 50;
-  background: var(--nav-blue);
 }
 .nav-tear{
-  position: absolute; top: 100%; left:0;
-  transform: translateY(-1px);
-  width:100%; height:auto;
-  display:block;
+  position: absolute; inset:0; z-index:-1;
+  width:100%; height:100%;
+  object-fit: cover;
+  object-position: center bottom;
   pointer-events: none;
 }
 .nav-inner{
