@@ -6,19 +6,6 @@ const CONTACT_ENDPOINT = 'https://xdchluuvicuuqyqsejnq.supabase.co/functions/v1/
 
 document.getElementById('footer-year').textContent = new Date().getFullYear();
 
-const socialsToggle = document.getElementById('socials-toggle');
-const socialsMenu = document.getElementById('socials-menu');
-socialsToggle.addEventListener('click', () => {
-  const open = socialsMenu.classList.toggle('open');
-  socialsToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-});
-document.addEventListener('click', (e) => {
-  if (!socialsToggle.contains(e.target) && !socialsMenu.contains(e.target)) {
-    socialsMenu.classList.remove('open');
-    socialsToggle.setAttribute('aria-expanded', 'false');
-  }
-});
-
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', (e) => {
     const id = link.getAttribute('href').slice(1);
